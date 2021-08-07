@@ -7,7 +7,7 @@ module.exports = {
   name: 'checkweek',
   description: 'check if this week is the week',
   execute: async ({ interaction, response }) => {
-    const weekno = await NAMESPACE.get("week-no");
+    const weekno = await NAMESPACE.get(interaction.guild_id);
     const nowWeek = dayjs().startOf("w").week()
     const isWeek = (nowWeek % 2 == weekno)
     return response({

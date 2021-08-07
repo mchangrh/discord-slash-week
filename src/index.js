@@ -95,6 +95,13 @@ const handleRequest = async ({ request, wait }) => {
         'Location': `https://discord.com/oauth2/authorize?client_id=${CLIENT_ID}&scope=applications.commands`,
       }
     });
+  if (url.pathname === '/github')
+    return new Response(null, {
+      status: 301,
+      headers: {
+        'Location': `https://github.com/mchangrh/discord-slash-week`,
+      }
+    });
   return new Response(null, { status: 404 });
 };
 
