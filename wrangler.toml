@@ -1,0 +1,9 @@
+name = "dndthisweek"
+type = "webpack"
+account_id = "d5ccf1d783709bbdc23fc29786f38736"
+workers_dev = true
+webpack_config = "webpack.config.js"
+
+kv_namespaces = [ 
+  { binding = "NAMESPACE", id = "e9ff332d704d49628e1f14f816825088" }
+]
