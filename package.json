@@ -1,19 +1,19 @@
 {
-  "name": "owo-discord-slash",
-  "version": "1.0.1",
-  "description": "owoify slash command",
+  "name": "discord-slash-week",
+  "version": "1.2.0",
+  "description": "check which week dnd is",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mchangrh/owo-discord-slash.git"
+    "url": "git+https://github.com/mchangrh/discord-slash-week.git"
   },
   "keywords": [
     "discord.js",
     "discord",
-    "owo",
     "discord-slash-commands",
     "discord-interactions",
     "cloudflare-workers"
@@ -21,17 +21,17 @@
   "author": "Michael Chang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mchangrh/owo-discord-slash/issues"
+    "url": "https://github.com/mchangrh/discord-slash-week/issues"
   },
-  "homepage": "https://github.com/mchangrh/owo-discord-slash#readme",
+  "homepage": "https://github.com/mchangrh/discord-slash-week#readme",
   "dependencies": {
-    "dayjs": "^1.10.6",
-    "discord-interactions": "^2.3.0",
-    "slash-commands": "^1.4.0"
+    "dayjs": "^1.10.7",
+    "discord-interactions": "^2.4.1",
+    "slash-commands": "^1.5.0"
   },
   "devDependencies": {
     "deep-equal": "^2.0.5",
     "dotenv": "^10.0.0",
-    "webpack": "^5.43.0"
+    "webpack": "^5.64.0"
   }
 }

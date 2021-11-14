@@ -1,5 +1,5 @@
 const { InteractionType, InteractionResponseType, InteractionResponseFlags, verifyKey } = require('discord-interactions');
-const commands = ["checkweek", "nextweek"];
+const commands = ["checkweek", "nextweek", "when"];
 
 // Util to send a JSON response
 const jsonResponse = obj => new Response(JSON.stringify(obj), {
@@ -57,7 +57,8 @@ const handleInteraction = async ({ request, wait }) => {
     return jsonResponse({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        content: 'An unexpected error occurred when executing the command.',
+        content: err,
+        //content: 'An unexpected error occurred when executing the command.',
         flags: InteractionResponseFlags.EPHEMERAL,
       },
     });

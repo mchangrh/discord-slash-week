@@ -5,6 +5,7 @@ Created to help bi-weekly D&D groups that keep getting the weeks shifted
 
 /checkweek - is the game this week or next week?
 /nextweek - shift the schedule by one week
+/when - Date of the start of the week
 
 Since it was modified to be specific by-guild
 [Invite Link](https://dndthisweek.mchang.workers.dev/invite)
